@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الحديث اليومي - مصدر النور</title>
+    <style>
+        :root { --primary: #2c3e50; --gold: #d4af37; --light: #f9f9f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--light); display: flex; flex-direction: column; align-items: center; min-height: 100vh; margin: 0; }
+        .container { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); max-width: 600px; width: 90%; text-align: center; margin-top: 50px; border-top: 5px solid var(--gold); }
+        h1 { color: var(--primary); margin-bottom: 20px; }
+        #hadith-text { font-size: 1.4rem; line-height: 1.8; color: #444; margin-bottom: 20px; min-height: 100px; font-weight: 500; }
+        #source { color: var(--gold); font-weight: bold; margin-bottom: 30px; }
+        button { background: var(--primary); color: white; border: none; padding: 12px 30px; border-radius: 25px; cursor: pointer; font-size: 1rem; transition: 0.3s; }
+        button:hover { background: var(--gold); transform: translateY(-2px); }
+        .ad-space { margin-top: 30px; padding: 15px; border: 1px dashed #ccc; color: #999; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>حديث اليوم</h1>
+        <div id="hadith-box">
+            <p id="hadith-text">جاري تحميل الحديث...</p>
+            <p id="source"></p>
+        </div>
+        <button onclick="getRandomHadith()">حديث آخر</button>
+
+        <div class="ad-space">
+            مساحة إعلانية (هنا تضع كود Google AdSense لاحقاً)
+        </div>
+    </div>
+
+    <script>const hadiths = [
+            // أحاديث الأخلاق والتعامل
+            { text: "«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى»", source: "رواه البخاري ومسلم" },
+            { text: "«الكلمة الطيبة صدقة»", source: "متفق عليه" },
+            { text: "«خياركم أحاسنكم أخلاقاً»", source: "رواه البخاري" },
+            { text: "«من كان يؤمن بالله واليوم الآخر فليقل خيراً أو ليصمت»", source: "متفق عليه" },
+            { text: "«لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه»", source: "رواه البخاري" },
+            { text: "«تبسمك في وجه أخيك لك صدقة»", source: "رواه الترمذي" },
+            { text: "«ليس المؤمن بالطعان ولا اللعان ولا الفاحش ولا البذيء»", source: "رواه الترمذي" },
+            { text: "«إن الله رفيق يحب الرفق في الأمر كله»", source: "متفق عليه" },
+            
+            // أحاديث الأمل وتجاوز الصعاب (تناسب تجربتك السابقة)
+            { text: "«عجباً لأمر المؤمن إن أمره كله خير، وليس ذاك لأحد إلا للمؤمن»", source: "رواه مسلم" },
+            { text: "«ما يصيب المسلم من نصب ولا وصب ولا هم ولا حزن حتى الشوكة يشاكها إلا كفر الله بها من خطاياه»", source: "متفق عليه" },
+            { text: "«احفظ الله يحفظك، احفظ الله تجده تجاهك»", source: "رواه الترمذي" },
+            { text: "«واعلم أن النصر مع الصبر، وأن الفرج مع الكرب، وأن مع العسر يسراً»", source: "رواه أحمد" },
+            { text: "«استعن بالله ولا تعجز»", source: "رواه مسلم" },
+            { text: "«من لزم الاستغفار جعل الله له من كل هم فرجاً ومن كل ضيق مخرجاً»", source: "رواه أبو داود" },
+            
+            // أحاديث العلم والعمل
+            { text: "«مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ»", source: "رواه مسلم" },
+            { text: "«الدال على الخير كفاعله»", source: "رواه الترمذي" },
+            { text: "«خيركم من تعلم القرآن وعلمه»", source: "رواه البخاري" },
+            { text: "«إن الله يحب إذا عمل أحدكم عملاً أن يتقنه»", source: "رواه البيهقي" },
+            { text: "«بلغوا عني ولو آية»", source: "رواه البخاري" },
+            
+            // أحاديث الأذكار والفضل
+            { text: "«كلمتان خفيفتان على اللسان، ثقيلتان في الميزان: سبحان الله وبحمده، سبحان الله العظيم»", source: "رواه البخاري" },
+            { text: "«الحمد لله تملأ الميزان»", source: "رواه مسلم" },
+            { text: "«من صلى علي صلاة صلى الله عليه بها عشراً»", source: "رواه مسلم" },
+            { text: "«من قال سبحان الله وبحمده في يوم مائة مرة حطت خطاياه وإن كانت مثل زبد البحر»", source: "متفق عليه" },
+            { text: "«أحب الكلام إلى الله أربع: سبحان الله، والحمد لله، ولا إله إلا الله، والله أكبر»", source: "رواه مسلم" }
+            
+            // يمكنك الاستمرار في إضافة المزيد هنا بنفس النمط...
+        ];
+
+        function getRandomHadith() {
+            const randomIndex = Math.floor(Math.random() * hadiths.length);
+            document.getElementById('hadith-text').innerText = hadiths[randomIndex].text;
+            document.getElementById('source').innerText = hadiths[randomIndex].source;
+        }
+
+        // تشغيل حديث عند فتح الموقع لأول مرة
+        window.onload = getRandomHadith;
+    </script>
+</body>
+</html>
