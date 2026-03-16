@@ -1,0 +1,176 @@
+body{ direction: rtl;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; height: auto;
+width: auto;}
+.d{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 20px;
+    border-bottom: 2px solid goldenrod;
+    width: cover;
+}
+.p2{
+    width: 90px;
+    height: 30px;
+}
+.p2:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%;
+    transform: matrix(0.5px) ;
+    transition: scale(1.05) ;
+
+}
+#p3{
+     background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%; 
+}
+/* حاوية النتائج */
+#p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* بطاقة الحديث النبوي */
+.hadit-card {
+    background-color: #ffffff;
+    border: 2px solid #dfa727; /* اللون الأصفر الذي تعتمده */
+    border-radius: 25px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* بطاقة التفسير والشرح */
+.tafsir-card {
+    background-color: #fffdf7; /* لون خلفية مائل للصفرة خفيف جداً */
+    border-right: 6px solid #dfa727;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: right; /* محاذاة النص لليمين للتفسير */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tafsir-title {
+    color: #dfa727;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.tafsir-text {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* تاغ المصدر */
+.source-label {
+    background-color: #dfa727;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* تنسيق شريط البحث */
+.search-section {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#sh {
+    width: 70%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #dfa727;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+}
+
+button { margin-top: 50px;
+    padding: 12px 25px;
+    background-color: #dfa727;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+button:hover{
+       cursor: pointer;
+    background-color: black;
+    color: white;
+    zoom: 105%;
+    box-shadow: 1px 0.5px 0.5px 1px black ;
+    transform: matrix(0.5px);
+    transition: scale(1.05s);
+}
+
+/* بطاقة الحديث */
+.hadit-card {
+    background-color: #ffffff;
+    border: 2px solid #dfa727;
+    border-radius: 25px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* بطاقة التفسير */
+.tafsir-card {
+    background-color: #fffdf7;
+    border-right: 6px solid #dfa727;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: right;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tafsir-title {
+    color: #dfa727;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.source-label {
+    background-color: #dfa727;
+    color: white;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}

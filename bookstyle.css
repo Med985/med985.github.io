@@ -1,0 +1,197 @@
+body{ direction: rtl;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; height: auto;
+width: auto;}
+.d{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 20px;
+    border-bottom: 2px solid goldenrod;
+    width: cover;
+}
+.p2{
+    width: 90px;
+    height: 30px;
+}
+.p2:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%;
+    transform: matrix(0.5px) ;
+    transition: scale(1.05) ;
+
+}
+#p3{
+     background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%; 
+}
+li{
+    list-style: none;
+}
+.c{
+    border: 1px solid goldenrod;
+    border-top: 5px solid goldenrod;
+    min-width: 700px;
+    width: fit-content;
+    min-height: 400px;
+    height: fit-content;
+    border-radius: 30px;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    display: block;
+
+}
+#book1{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('download.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book1:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('download.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}
+#book2{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('download.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('download\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book2:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('download\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+#book3{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('download.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('download\ \(2\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book3:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('download\ \(2\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}
+iframe{
+    width:100% ;
+    height: 800px;
+border: none;
+}
+#book4{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('56d83b9aebebdc2d6ea25e97f7b6f521.png.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book4:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('56d83b9aebebdc2d6ea25e97f7b6f521.png.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}
+#book5{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('download (3).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book5:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('download (3).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}
+#book6{
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background-image: url('download (4).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#book6:hover{
+    cursor: pointer;
+    zoom: 110%;
+    box-shadow: 1px 0.5px 0.5px 1px goldenrod;
+    background-image: url('download (4).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: matrix(0.5s);
+    transition: scale(1.05);
+}

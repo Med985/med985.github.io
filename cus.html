@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/jpeg" href="p.jpg">
+        <script src="cus.j"></script>
+    <title> الحديث النبوي : اتصل بنا </title>
+</head>
+<body><section id="contact-form" style="max-width: 500px; margin: 40px auto; padding: 20px; font-family: 'Cairo', sans-serif; direction: rtl;">
+    <h2 style="text-align: center; color: #b8860b;">أرسل لي رسالة مباشرة</h2>
+    
+    <form id="my-form" action="https://formspree.io/f/mlgppbqr" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" name="name" placeholder="الاسم الكامل" required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+        <input type="email" name="email" placeholder="بريدك الإلكتروني" required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+        <textarea name="message" placeholder="اكتب رسالتك هنا..." rows="5" required style="padding: 12px; border: 1px solid #ddd; border-radius: 8px;"></textarea>
+        
+        <button id="submit-btn" type="submit" style="padding: 15px; background-color: #b8860b; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: bold;">
+            إرسال الآن
+        </button>
+        
+        <p id="status" style="text-align: center; margin-top: 10px; font-weight: bold;"></p>
+    </form>
+</section>
+</body>
+</html>

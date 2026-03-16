@@ -1,0 +1,21 @@
+.privacy-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.8;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    font-family: 'Cairo', sans-serif;
+}
+
+.privacy-section h2 {
+    color: #b8860b; /* لون ذهبي غامق يناسب تصميمك */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.privacy-section h3 {
+    margin-top: 25px;
+    color: #333;
+}

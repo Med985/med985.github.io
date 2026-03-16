@@ -1,0 +1,58 @@
+body{ direction: rtl;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; height: auto;
+width: auto;}
+.d{
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    gap: 20px;
+    border-bottom: 2px solid goldenrod;
+    width: cover;
+}
+.p2{
+    width: 90px;
+    height: 30px;
+}
+.p2:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%;
+    transform: matrix(0.5px) ;
+    transition: scale(1.05) ;
+
+}
+#p3{
+     background-color: goldenrod;
+    color: white;
+    border-radius: 30px;
+    zoom: 109%; 
+}
+#c{
+    align-items: center;
+    font-style: italic;
+display: flex;
+flex-direction: column;
+text-align: center;
+justify-content: center;
+min-width:   700px ;
+width: fit-content;
+min-height: 400px ;
+height: fit-content;
+border: 0.2px solid goldenrod;
+margin: 20px auto 0 auto;
+border-radius: 25px;
+backdrop-filter: blur(5px);
+border-top: 5px solid goldenrod;
+}
+
+#p{
+font-size: larger;
+}
+#p1{
+    color: gold;
+}
